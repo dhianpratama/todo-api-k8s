@@ -1,5 +1,5 @@
-# Use the official Node.js 14 image as the base image
-FROM node:14
+# Use the official Node.js image as the base image
+FROM node:lts
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the application
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
