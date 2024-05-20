@@ -23,8 +23,8 @@ spec:
     spec:
       containers:
         - name: todo-api
-          image: todo-api
-          imagePullPolicy: Never
+          image: muthidp/todo-api:amd64
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           envFrom:
